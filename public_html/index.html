@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="resources/css/bootstrap.min.css">
+    <script src="resources/js/jquery-1.11.3.min.js"></script>
+    <script src="resources/js/bootstrap.min.js"></script>
+    <script src="resources/js/post.js"></script>
+  </head>
+  <body>
+  <div class="container">
+    <h1></h1> 
+    <form id="myForm" action="" role="form">
+      <div class="form-group form-inline">
+      <label class="col-sm-1 control-label">Bank: </label><select class="form-control" name='bk_name' id='bk_select'>
+            <option value="ch">CHASE</option>
+            <option value="ew">East West</option>
+          </select><br>
+      </div>
+      <div class="form-group form-inline">
+        <label class="col-sm-1 control-label">Name: </label> <input class="form-control" type='text' name='name'/><br>
+      </div>
+      <div class="form-group form-inline">
+        <label class="col-sm-1 control-label">Address: </label> <input class="form-control" type='text' name='addr'/><br>
+      </div>
+      <div class="form-group form-inline">
+        <label class="col-sm-1 control-label">City: </label> <input class="form-control" type='text' name='city'/><br>
+      </div>
+      <div class="form-group form-inline">
+        <label class="col-sm-1 control-label">State: </label> <input class="form-control" type='text' name='state'/><br>
+      </div>
+      <div class="form-group form-inline">
+        <label class="col-sm-1 control-label">Zip: </label> <input class="form-control" type='text' name='zip'/><br>
+      </div>
+      <div class="form-group form-inline">
+        <label class="col-sm-1 control-label">Amount: </label> <input class="form-control" type='text' name='amount'/><br>
+      </div>
+      <div class="form-group form-inline">
+        <label class="col-sm-1 control-label">Month: </label> <input class="form-control" type='text' name='month'/>(optional)<br>
+      </div>
+      <div class="form-group form-inline">
+        <label class="col-sm-1 control-label">Year: </label> <input class="form-control" type='text' name='year'/>(optional)<br>
+      </div>
+      <div id='checking_div' class="form-group form-inline">
+        <label class="col-sm-1 control-label">Checking Account: </label> <input class="form-control" type='text' name='chkAcct'/>(optional)<br>
+      </div>
+      <div class="form-group form-inline">
+        <label class="col-sm-1 control-label">Saving Account: </label> <input class="form-control" type='text' name='svAcct'/>(optional)<br>
+      </div>
+      
+      <input class="btn btn-primary" type="button" onclick="sent()" value="Submit">
+    </form>
+  </div>
+  </body>
+</html>
